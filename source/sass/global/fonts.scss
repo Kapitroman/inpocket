@@ -1,18 +1,47 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2");
-// }
+@font-face {
+  font-family: "Asap";
+  src: url("../fonts/Asap-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
+  font-family: "Asap";
+  src: url("../fonts/Asap-Regular.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  font-family: "";
-
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("../fonts/Asap-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("../fonts/Asap-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }

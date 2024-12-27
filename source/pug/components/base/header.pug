@@ -2,20 +2,64 @@ mixin header(headerMods, currentUrl)
   -
     const headerLinks = [
       {
-        href: "index.html",
-        text: "Главная"
+        href: "#",
+        text: "услуги"
       },
       {
         href: "#",
-        text: "Страница 2"
+        text: "условия подключения"
       },
       {
         href: "#",
-        text: "Страница 3"
+        text: "о нас"
+      },
+      {
+        href: "#",
+        text: "сотрудничать"
       },
     ]
 
-  header.header(class=headerMods)
+  header.header(class=headerMods, data-header="")
+    .container
+      +logo()
+      .header__wrapper(data-close-menu)
+        nav.header__nav
+          ul.header__list
+            each link in headerLinks
+              li.header__item
+                a.header__link(href=link.href)= link.text
+
+        a(href="#").header__link-enter Вход
+      button.header__burger(type="button", data-burger, aria-label="Переключатель отображения меню", aria-pressed="false")
+        span
+        span
+        span
+
+  //-header.header(class=headerMods, data-header="")
+    .container
+      +logo("header")
+      .header__wrapper(data-close-menu)
+        nav.main-nav
+          ul.main-nav__list
+            each link in headerLinks
+              - const activeState = currentUrl === link.href
+              li.main-nav__item
+                if(activeState)
+                  span.main-nav__link.is-active= link.text
+                else
+                  a.main-nav__link(href=link.href)= link.text
+        p.text-indent.header__slogan
+          | От простой консультации до сложных судебных споров – мы всегда рядом,
+          | чтобы вы могли уверенно двигаться вперед.
+        +btn({
+          href: "#",
+          text: "Консультация"
+        })(data-open-modal="sign-up-consultation")
+      button.header__menu-button(type="button", data-burger, aria-label="Переключатель отображения меню", aria-pressed="false")
+        +icon("open-burger", 15, 15).header__open-burger
+        +icon("close-burger", 15, 15).header__close-burger
+
+  //-header.header(class=headerMods)
     .container
       if(currentUrl === "index.html")
         //- lighthouse снимает 10 баллов SEO за <a> без href

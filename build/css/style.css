@@ -1304,8 +1304,65 @@ button,
 }
 
 .footer {
-  padding: 40px 0;
-  background-color: #2c39f2;
+  padding: 40px 0 113px 0;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 20px 0 50px 0;
+  }
+}
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer .logo {
+  margin-top: 6px;
+}
+@media (max-width: 767px) {
+  .footer .logo {
+    margin-top: 3px;
+  }
+}
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  min-width: 199px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 114%;
+}
+@media (max-width: 767px) {
+  .footer__info {
+    min-width: 130px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.footer__info a {
+  color: #ffffff;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .footer__info a:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+}
+.footer__info a.focus-visible:focus {
+  opacity: 0.7;
 }
 
 .modal {
@@ -2304,12 +2361,17 @@ a.logo.focus-visible:focus {
 
 .header .logo {
   width: 88px;
-  height: 24px;
+  aspect-ratio: 168/44;
 }
 
 .footer .logo {
-  width: 167px;
-  height: 44px;
+  width: 168px;
+  aspect-ratio: 168/44;
+}
+@media (max-width: 767px) {
+  .footer .logo {
+    width: 88px;
+  }
 }
 
 @media (max-width: 767px) {

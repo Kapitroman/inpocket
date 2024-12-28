@@ -1,10 +1,25 @@
 mixin intro()
-  .intro
+  section.intro
     //- вставлять блоки во внешний контейнер неверно
     //- все блоки содержат в себе container без доп класса tutorial__wrapper
     .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
+      .intro__head-container
+        h1.intro__title.text-gradient организация  процесса <br>POS-кредитования физических лиц
+        p.intro__text проверенный способ продавать больше за счет увеличения продаж в кредит
+        +btn({
+          href: "#",
+          text: "сотрудничать"
+        })
+      .intro__features-container
+        +picture("content", "card", "png", 1311, 776, "фоновое изображение карты")
+        .intro__features-list
+          .intro__features-item
+            p.intro__features-item-number.text-gradient +30%
+            p.intro__features-item-text к среднему чеку после подключения
+          .intro__features-item
+            p.intro__features-item-number.text-gradient 24/7
+            p.intro__features-item-text онлайн-поддержка персонального куратора
+          .intro__features-item
+            p.intro__features-item-number.text-gradient 90%
+            p.intro__features-item-text одобрение банков-партнеров
 
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")

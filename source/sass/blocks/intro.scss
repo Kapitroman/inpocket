@@ -1,5 +1,103 @@
 .intro {
+  @include vp-1439 {
+    font-size: size-desktop($fz-default);
+  }
+
+  margin-top: 152px;
+  margin-bottom: 258px;
+
   @include vp-767 {
-    padding-top: 64px;
+    margin-top: 64px;
+    margin-bottom: 100px;
+  }
+
+  &__head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 954px;
+    margin-bottom: 220px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+
+    font-family: $ff-century;
+    font-size: 48px;
+    line-height: 122%;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 114%;
+  }
+
+  &__features-container {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 1311 / 776;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      opacity: 0.8;
+    }
+  }
+
+  &__features-list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 226px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 324px;
+    padding: 75px 60px;
+
+    background-color: #151515;
+  }
+
+  &__features-item {}
+
+  &__features-item+.intro__features-item {
+    margin-top: 24px;
+  }
+
+  &__features-item-number {
+    margin: 0;
+    margin-bottom: 16px;
+
+    font-family: $ff-century;
+    //font-size: 60px;
+    //font-size: size(60px);
+    font-size: size-desktop(60px);
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  &__features-item-text {
+    margin: 0;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 114%;
+    color: $color-default-white;
   }
 }

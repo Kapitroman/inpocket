@@ -1,17 +1,27 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
-
-  color: $color-default-white;
-
-  background-color: $color-neon-blue;
+  padding: 12px 20px;
   border: none;
-  cursor: pointer;
+  border-radius: 16px;
 
+  background-color: #E2FF32;
+
+  color: #151515;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 114%;
+  text-transform: uppercase;
+
+  cursor: pointer;
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  &--form {
+    padding: 20px 40px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 114%;
+    text-transform: capitalize;
   }
 
   &:disabled {
@@ -21,6 +31,6 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }

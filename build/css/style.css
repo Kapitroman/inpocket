@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
   ========================================================================== */
@@ -574,6 +575,7 @@ button,
 .header {
   width: 100%;
   padding: 20px 0;
+  background-color: #151515;
 }
 @media (max-width: 767px) {
   .header {
@@ -1492,16 +1494,25 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 10px 20px;
-  color: #ffffff;
-  background-color: #2c39f2;
+  padding: 12px 20px;
   border: none;
+  border-radius: 16px;
+  background-color: #E2FF32;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 114%;
+  text-transform: uppercase;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.btn--red {
-  background-color: #ff1553;
+.btn--form {
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 114%;
+  text-transform: capitalize;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -1509,11 +1520,11 @@ button,
 }
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 .btn.focus-visible:focus {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .custom-input,
@@ -2374,10 +2385,109 @@ a.logo.focus-visible:focus {
   }
 }
 
+.text-gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(#E3E1E1), to(#E2FF32));
+  background-image: linear-gradient(90deg, #E3E1E1 0%, #E2FF32 100%);
+  /* обрезаем фон по тексту */
+  -webkit-background-clip: text;
+  /* меняет цвет текста заголовка на прозрачный что бы можно было увидеть градиент*/
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  margin-top: 152px;
+  margin-bottom: 258px;
+}
+@media (max-width: 1439px) {
+  .intro {
+    font-size: 1.1111111111vw;
+  }
+}
 @media (max-width: 767px) {
   .intro {
-    padding-top: 64px;
+    margin-top: 64px;
+    margin-bottom: 100px;
   }
+}
+.intro__head-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 954px;
+  margin-bottom: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.intro__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Century Gothic", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 122%;
+  text-transform: uppercase;
+}
+.intro__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 114%;
+}
+.intro__features-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1311/776;
+}
+.intro__features-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+.intro__features-list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 226px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 324px;
+  padding: 75px 60px;
+  background-color: #151515;
+}
+.intro__features-item + .intro__features-item {
+  margin-top: 24px;
+}
+.intro__features-item-number {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Century Gothic", "Arial", sans-serif;
+  font-size: 4.1666666667vw;
+  font-weight: 700;
+  line-height: 120%;
+}
+.intro__features-item-text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 114%;
+  color: #ffffff;
 }
 
 /* @mixin hover-focus {

@@ -1,0 +1,27 @@
+mixin form()
+
+  .form
+    .container
+      .form__container
+        h2.form__title Оставьте заявку
+        p.form__text И мы свяжемся с вами
+        form(action="#", method="post")
+          .form__fields-info
+            +custom-input({
+              inputPlaceholder: "Имя",
+              inputName: "name",
+            })
+            +custom-input({
+              inputPlaceholder: "E-mail или телефон",
+              inputName: "telOrMail",
+            })
+          .form__fields-agreement
+            +custom-toggle({
+              inputLabel: "Соглашаюсь с условиями.",
+              inputName: "agreement",
+            }).custom-toggle--checkbox
+            a(href="#").form__more-details Подробнее
+          +btn({
+            type: "submit",
+            text: "Отправить"
+          }).btn--form

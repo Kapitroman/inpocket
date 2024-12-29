@@ -1,0 +1,21 @@
+mixin faq()
+  .faq
+    .container-more-less
+      h2.faq__title.text-title часто задаваемые вопросы
+      .faq__container(data-accordion="parent", data-single)
+        .faq__element(data-accordion="element")
+          button.faq__button(type="button", data-accordion="button") Какие документы нужны для оформления?
+          .faq__content(data-accordion="content")
+            .faq__wrapper
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae, quidem sint laboriosam reiciendis accusantium iusto distinctio!
+        .faq__element(data-accordion="element")
+          button.faq__button.faq__button(type="button", data-accordion="button") Сколько времени займет разработка проекта?
+          .faq__content(data-accordion="content")
+            .faq__wrapper
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur perspiciatis impedit ab aperiam neque corrupti nisi deleniti optio enim provident molestiae, quidem sint laboriosam reiciendis accusantium iusto distinctio!
+        .faq__element.is-active(data-accordion="element")
+          button.faq__button(type="button", data-accordion="button") Как выбрать технологию для моих задач?
+          .faq__content(data-accordion="content")
+            .faq__wrapper
+              p Нужно оставить заявку на сайте, и мы свяжемся с вами для уточнения деталей. Вместе мы определим оптимальный вариант для вашего бизнеса и обозначим временные рамки.
+

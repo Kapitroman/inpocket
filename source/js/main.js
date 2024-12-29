@@ -5,6 +5,7 @@ import { CustomSelect } from './modules/select/custom-select';
 import { uploadFile, uploadImageDrop } from './modules/input-file/init-upload';
 
 import { Burger } from './modules/burger';
+import { initAccordions } from './modules/init-accordion.js';
 
 // ---------------------------------
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const burger = new Burger();
     burger.init();
+    initAccordions();
   });
 });
 

@@ -587,6 +587,27 @@ button,
   }
 }
 
+.container-more-less {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 130px;
+}
+@media (max-width: 1439px) {
+  .container-more-less {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .container-more-less {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 767px) {
+  .container-more-less {
+    padding: 0 16px;
+  }
+}
+
 .header {
   width: 100%;
   padding: 20px 0;
@@ -2398,6 +2419,7 @@ a.logo.focus-visible:focus {
   font-weight: 400;
   line-height: 123%;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .card {
@@ -2564,6 +2586,22 @@ a.logo.focus-visible:focus {
             transform: translateZ(0) translateX(100%);
   }
 }
+[data-accordion=element].is-active > [data-accordion=content] {
+  max-height: 100%;
+}
+
+[data-accordion=parent].no-transition [data-accordion=content] {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-accordion=content] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+
 .intro {
   /*
   @function size-desktop($size-in-px) {
@@ -2806,6 +2844,58 @@ a.logo.focus-visible:focus {
 }
 .marquee-section__item.focus-visible:focus {
   color: #ffffff;
+}
+
+.faq {
+  margin-bottom: 145px;
+}
+.faq__title {
+  margin: 0;
+  margin-bottom: 47px;
+}
+.faq__container {
+  padding: 40px 300px 63px 104px;
+  aspect-ratio: 1180/414;
+  background-image: url("../img/svg/background-faq.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.faq__element:last-child {
+  margin-bottom: 0;
+}
+.faq__element {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 115%;
+}
+.faq__element.is-active > .faq__button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#E3E1E1), to(#E2FF32));
+  background-image: linear-gradient(90deg, #E3E1E1 0%, #E2FF32 100%);
+  color: #151515;
+}
+.faq__button {
+  padding: 19px;
+  border-radius: 16px;
+  border: 1px solid #ACACAC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 115%;
+  color: #E3E1E1;
+  background-color: #151515;
+  cursor: pointer;
+}
+.faq__content {
+  padding-left: 300px;
+  margin-top: 8px;
+}
+.faq__wrapper {
+  padding: 20px;
+  border-radius: 16px;
+  color: #151515;
+  background-color: #F5F5F5;
+}
+.faq__wrapper p {
+  margin: 0;
 }
 
 /* @mixin hover-focus {

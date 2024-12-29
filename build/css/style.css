@@ -2886,6 +2886,8 @@ a.logo.focus-visible:focus {
 }
 .faq__content {
   padding-left: 300px;
+}
+.faq__element.is-active > .faq__content {
   margin-top: 8px;
 }
 .faq__wrapper {
@@ -2896,6 +2898,17 @@ a.logo.focus-visible:focus {
 }
 .faq__wrapper p {
   margin: 0;
+}
+
+.how-do-work-it {
+  margin-bottom: 169px;
+}
+.how-do-work-it__title {
+  margin-bottom: 75px;
+}
+.how-do-work-it .video {
+  width: 100%;
+  aspect-ratio: 2100/500;
 }
 
 /* @mixin hover-focus {

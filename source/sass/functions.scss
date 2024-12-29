@@ -135,10 +135,25 @@
 // }
 
 
+
+
+
+/*
+@function size($size-in-px) {
+  @return calc($size-in-px / $fz-default * 1rem);
+}
+*/
+/*
+@function size-desktop($size-in-px) {
+  @return calc($size-in-px / $vp-1440 * 100vw);
+}
+*/
+
+
 @function size($size-in-px) {
   @return calc($size-in-px / $fz-default * 1rem);
 }
 
 @function size-desktop($size-in-px) {
-  @return calc($size-in-px / $vp-1440 * 100vw);
+  @return calc($size-in-px / $vp-1920 * 100vw);
 }

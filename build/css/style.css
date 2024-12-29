@@ -314,6 +314,16 @@ template {
   display: none;
 }
 
+/*
+@function size($size-in-px) {
+  @return calc($size-in-px / $fz-default * 1rem);
+}
+*/
+/*
+@function size-desktop($size-in-px) {
+  @return calc($size-in-px / $vp-1440 * 100vw);
+}
+*/
 @font-face {
   font-family: "Asap";
   src: url("../fonts/Asap-Bold.woff2") format("woff2");
@@ -380,6 +390,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+@media (max-width: 1439px) {
+  html {
+    font-size: 0.8333333333vw;
+  }
 }
 
 body {
@@ -2394,14 +2409,116 @@ a.logo.focus-visible:focus {
   -webkit-text-fill-color: transparent;
 }
 
+.text-title {
+  font-family: "Century Gothic", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 123%;
+  text-transform: uppercase;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  aspect-ratio: 720/413;
+  padding: 40px;
+  padding-bottom: 60px;
+  border-radius: 20px;
+  color: #151515;
+  background-image: linear-gradient(108.54deg, #D0D0D0 -0.99%, #838383 187.83%);
+}
+.card__info-head {
+  margin-bottom: 28px;
+}
+.card__info-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+.card__info-title {
+  margin: 0;
+  font-family: "Century Gothic", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 123%;
+}
+.card__info-subtitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.card__info-content {
+  max-width: 490px;
+  margin: 0;
+}
+.card__info-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.card__info-text + .card__info-text {
+  margin-top: 12px;
+}
+.card__info-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.card__info-text + .card__info-list {
+  margin-top: 12px;
+}
+.card__arrow {
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+}
+.card .card__image {
+  width: 100px;
+  height: 100px;
+  margin-top: auto;
+}
+
+.card--black {
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #262626), to(#262626));
+  background-image: linear-gradient(#262626 0, #262626 100%);
+}
+
+.card--yellow {
+  background-image: linear-gradient(118.23deg, #E2FF32 5.2%, #AFC529 139.8%);
+}
+
 .intro {
+  /*
+  @function size-desktop($size-in-px) {
+    @return calc($size-in-px / $vp-1440 * 100vw);
+  }
+
+  font-size: $fz-default;
+
+  @include vp-1439 {
+    font-size: size-desktop($fz-default);
+  }
+  */
   margin-top: 152px;
   margin-bottom: 258px;
-}
-@media (max-width: 1439px) {
-  .intro {
-    font-size: 1.1111111111vw;
-  }
 }
 @media (max-width: 767px) {
   .intro {
@@ -2478,9 +2595,14 @@ a.logo.focus-visible:focus {
   margin: 0;
   margin-bottom: 16px;
   font-family: "Century Gothic", "Arial", sans-serif;
-  font-size: 4.1666666667vw;
+  font-size: 3.75rem;
   font-weight: 700;
   line-height: 120%;
+  /*
+  @include vp-1439 {
+    font-size: size-desktop(60px);
+  }
+  */
 }
 .intro__features-item-text {
   margin: 0;
@@ -2488,6 +2610,29 @@ a.logo.focus-visible:focus {
   font-weight: 500;
   line-height: 114%;
   color: #ffffff;
+}
+
+.resources {
+  margin-bottom: 178px;
+}
+.resources .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.resources__title {
+  margin: 0;
+  margin-bottom: 28px;
+}
+.resources__cards {
+  width: 720px;
 }
 
 /* @mixin hover-focus {

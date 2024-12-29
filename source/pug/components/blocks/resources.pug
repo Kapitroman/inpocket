@@ -1,0 +1,48 @@
+mixin resources()
+  section.resources
+    .container
+      h2.resources__title.text-title возможности
+      .resources__cards
+        .card
+          .card__info
+            .card__info-head
+              .card__info-title-wrap
+                h3.card__info-title Оформление в торговой точке
+                +icon("card-arrow", 40, 40).card__arrow
+              p.card__info-subtitle Для компаний с кредитным отделом
+            .card__info-content
+              p.card__info-text Позволяет продавать в рассрочку/кредит при первом касании. Наиболее быстрый способ, требующий участия специалиста торговой организации.
+          +icon("mall", 100, 100).card__image
+        .card.card--black
+          .card__info
+            .card__info-head
+              .card__info-title-wrap
+                h3.card__info-title Оформление черех call-центр
+                +icon("card-arrow", 40, 40).card__arrow
+              p.card__info-subtitle Для малого и среднего бизнеса
+            .card__info-content
+              p.card__info-text Позволяет продавать в рассрочку/кредит при очной работе с клиентом. Для подачи заявки не требуется наличие кредитного специалиста.
+          +icon("call", 100, 100).card__image
+        .card.card--yellow
+          .card__info
+            .card__info-head
+              .card__info-title-wrap
+                h3.card__info-title Mix технологий
+                +icon("card-arrow", 40, 40).card__arrow
+              p.card__info-subtitle Для удаленной работы с клиентом
+            .card__info-content
+              p.card__info-text Позволяет продавать в рассрочку/кредит, направляя клиенту ссылку или QR-код на подачу заявки. Наличие кредитного специалиста в организации при этом не требуется.
+          +icon("mix", 100, 100).card__image
+        .card
+          .card__info
+            .card__info-head
+              .card__info-title-wrap
+                h3.card__info-title Оформление в e.com
+                +icon("card-arrow", 40, 40).card__arrow
+              p.card__info-subtitle Для онлайн продаж клиентам
+            .card__info-content
+              p.card__info-text Позволяет клиентам самостоятельно оформлять покупку, выбрав соответствующий способ оплаты на сайте:
+              ul.card__info-list
+                li.card__info-list-item в рассрочку/кредит
+                li.card__info-list-item через баннер/ссылку/QR-код/корзину сайта
+          +icon("ecom", 100, 100).card__image

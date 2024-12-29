@@ -1,8 +1,15 @@
 .intro {
+  /*
+  @function size-desktop($size-in-px) {
+    @return calc($size-in-px / $vp-1440 * 100vw);
+  }
+
+  font-size: $fz-default;
+
   @include vp-1439 {
     font-size: size-desktop($fz-default);
   }
-
+  */
   margin-top: 152px;
   margin-bottom: 258px;
 
@@ -86,10 +93,15 @@
 
     font-family: $ff-century;
     //font-size: 60px;
-    //font-size: size(60px);
-    font-size: size-desktop(60px);
+    font-size: size(60px);
+
     font-weight: 700;
     line-height: 120%;
+    /*
+    @include vp-1439 {
+      font-size: size-desktop(60px);
+    }
+    */
   }
 
   &__features-item-text {

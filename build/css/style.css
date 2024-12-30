@@ -2966,16 +2966,41 @@ a.logo.focus-visible:focus {
 .faq {
   margin-bottom: 145px;
 }
+@media (max-width: 1279px) {
+  .faq {
+    margin-bottom: 120px;
+  }
+}
 .faq__title {
   margin: 0;
   margin-bottom: 47px;
 }
+@media (max-width: 1279px) {
+  .faq__title {
+    margin-bottom: 35px;
+  }
+}
 .faq__container {
   padding: 40px 300px 63px 104px;
-  aspect-ratio: 1180/414;
   background-image: url("../img/svg/background-faq.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100%;
+}
+@media (max-width: 1279px) {
+  .faq__container {
+    padding: 20px 40px 20px 40px;
+  }
+}
+@media (max-width: 1023px) {
+  .faq__container {
+    aspect-ratio: initial;
+    background-repeat: repeat-y;
+  }
+}
+@media (max-width: 479px) {
+  .faq__container {
+    padding: 10px 20px 10px 20px;
+  }
 }
 .faq__element:last-child {
   margin-bottom: 0;
@@ -2984,6 +3009,11 @@ a.logo.focus-visible:focus {
   margin-bottom: 8px;
   font-size: 16px;
   line-height: 115%;
+}
+@media (max-width: 479px) {
+  .faq__element {
+    font-size: 14px;
+  }
 }
 .faq__element.is-active > .faq__button {
   background-image: -webkit-gradient(linear, left top, right top, from(#E3E1E1), to(#E2FF32));
@@ -3001,8 +3031,25 @@ a.logo.focus-visible:focus {
   background-color: #151515;
   cursor: pointer;
 }
+@media (max-width: 479px) {
+  .faq__button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}
 .faq__content {
   padding-left: 300px;
+}
+@media (max-width: 1279px) {
+  .faq__content {
+    padding-left: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .faq__content {
+    padding-left: 50px;
+  }
 }
 .faq__element.is-active > .faq__content {
   margin-top: 8px;
@@ -3012,6 +3059,12 @@ a.logo.focus-visible:focus {
   border-radius: 16px;
   color: #151515;
   background-color: #F5F5F5;
+}
+@media (max-width: 479px) {
+  .faq__wrapper {
+    padding: 12px;
+    border-radius: 8px;
+  }
 }
 .faq__wrapper p {
   margin: 0;

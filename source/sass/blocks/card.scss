@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  //width: 720px;
   width: 100%;
   aspect-ratio: 720 / 413;
   padding: 40px;
@@ -13,8 +12,41 @@
 
   background-image: linear-gradient(108.54deg, #D0D0D0 -0.99%, #838383 187.83%);
 
+  @include vp-767 {
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  @include vp-479 {
+    aspect-ratio: 288 / 197;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+  }
+
+  &__info {
+    margin-bottom: 20px;
+
+    @include vp-767 {
+      margin-bottom: 15px;
+    }
+
+    @include vp-479 {
+      margin-bottom: 10px;
+    }
+  }
+
   &__info-head {
     margin-bottom: 28px;
+
+    @include vp-767 {
+      margin-bottom: 16px;
+    }
+
+    @include vp-479 {
+      margin-bottom: 8px;
+    }
   }
 
   &__info-title-wrap {
@@ -23,6 +55,14 @@
     align-items: center;
 
     margin-bottom: 8px;
+
+    @include vp-767 {
+      margin-bottom: 5px;
+    }
+
+    @include vp-479 {
+      margin-bottom: 3px;
+    }
   }
 
   &__info-title {
@@ -32,6 +72,15 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 123%;
+
+    @include vp-767 {
+      font-size: 20px;
+    }
+
+    @include vp-479 {
+      font-size: 16px;
+    }
+
   }
 
   &__info-subtitle {
@@ -40,6 +89,14 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 120%;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+
+    @include vp-479 {
+      font-size: 12px;
+    }
   }
 
   &__info-content {
@@ -53,10 +110,26 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+
+    @include vp-479 {
+      font-size: 12px;
+    }
   }
 
   &__info-text+.card__info-text {
     margin-top: 12px;
+
+    @include vp-767 {
+      margin-top: 8px;
+    }
+
+    @include vp-479 {
+      margin-top: 5px;
+    }
   }
 
   &__info-list {
@@ -66,28 +139,67 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
+
+    @include vp-767 {
+      font-size: 14px;
+    }
+
+    @include vp-479 {
+      font-size: 12px;
+    }
   }
 
   &__info-text+.card__info-list {
     margin-top: 12px;
+
+    @include vp-767 {
+      margin-top: 8px;
+    }
+
+    @include vp-479 {
+      margin-top: 5px;
+    }
   }
 
   &__arrow {
+    flex-shrink: 0;
+
     width: 40px;
     height: 40px;
     margin-left: 40px;
+
+    @include vp-767 {
+      width: 25px;
+      height: 25px;
+    }
+
+    @include vp-479 {
+      margin-left: 20px;
+
+      width: 18px;
+      height: 18px;
+    }
   }
 
   .card__image {
     width: 100px;
     height: 100px;
     margin-top: auto;
+
+    @include vp-767 {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include vp-479 {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
 .card--black {
   color: $color-default-white;
-  // background: #262626;
   background-image: linear-gradient(#262626 0, #262626 100%);
 }
 

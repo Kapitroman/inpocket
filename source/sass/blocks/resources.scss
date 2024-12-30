@@ -1,6 +1,14 @@
 .resources {
   margin-bottom: 178px;
 
+  @include vp-1279 {
+    margin-bottom: 120px;
+  }
+
+  @include vp-479 {
+    margin-bottom: 80px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -9,7 +17,11 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 38px;
+
+    @include vp-1279 {
+      margin-bottom: 35px;
+    }
   }
 
   &__cards {
@@ -17,5 +29,9 @@
     //aspect-ratio: 720 / 820;
 
     //overflow: hidden;
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 }

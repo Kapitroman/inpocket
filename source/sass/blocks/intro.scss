@@ -1,21 +1,19 @@
 .intro {
-  /*
-  @function size-desktop($size-in-px) {
-    @return calc($size-in-px / $vp-1440 * 100vw);
-  }
-
-  font-size: $fz-default;
-
-  @include vp-1439 {
-    font-size: size-desktop($fz-default);
-  }
-  */
   margin-top: 152px;
   margin-bottom: 258px;
 
+  @include vp-1279 {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+
   @include vp-767 {
-    margin-top: 64px;
-    margin-bottom: 100px;
+    margin-top: 184px;
+  }
+
+  @include vp-479 {
+    margin-top: 144px;
+    margin-bottom: 80px;
   }
 
   &__head-container {
@@ -29,6 +27,14 @@
     margin-right: auto;
 
     text-align: center;
+
+    @include vp-1279 {
+      margin-bottom: 120px;
+    }
+
+    @include vp-479 {
+      margin-bottom: 80px;
+    }
   }
 
   &__title {
@@ -39,6 +45,14 @@
     font-size: 48px;
     line-height: 122%;
     text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 32px;
+    }
+
+    @include vp-479 {
+      font-size: 24px;
+    }
   }
 
   &__text {
@@ -47,6 +61,14 @@
 
     font-size: 24px;
     line-height: 114%;
+
+    @include vp-1023 {
+      font-size: 20px;
+    }
+
+    @include vp-479 {
+      font-size: 18px;
+    }
   }
 
   &__features-container {
@@ -79,12 +101,46 @@
     padding: 75px 60px;
 
     background-color: #151515;
+
+    @include vp-1279 {
+      width: 280px;
+      padding: 45px 35px;
+    }
+
+    @include vp-1023 {
+      right: 120px;
+
+      width: 250px;
+      padding: 25px 25px;
+    }
+
+    @include vp-767 {
+      right: 25%;
+
+      width: 50%;
+      padding: 15px 15px;
+    }
+
+    @include vp-479 {
+      right: 15%;
+
+      width: 70%;
+      padding: 5px 15px;
+    }
   }
 
   &__features-item {}
 
   &__features-item+.intro__features-item {
     margin-top: 24px;
+
+    @include vp-1023 {
+      margin-top: 16px;
+    }
+
+    @include vp-767 {
+      margin-top: 10px;
+    }
   }
 
   &__features-item-number {
@@ -92,16 +148,31 @@
     margin-bottom: 16px;
 
     font-family: $ff-century;
-    //font-size: 60px;
-    font-size: size(60px);
+    font-size: 60px;
+    //font-size: size(60px);
 
     font-weight: 700;
     line-height: 120%;
-    /*
-    @include vp-1439 {
-      font-size: size-desktop(60px);
+
+    @include vp-1279 {
+      font-size: 44px;
     }
-    */
+
+    @include vp-1023 {
+      font-size: 36px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 6px;
+
+      //font-size: 20px;
+      font-size: size(100px);
+    }
+
+    @include vp-479 {
+      margin-bottom: 3px;
+    }
+
   }
 
   &__features-item-text {
@@ -111,5 +182,14 @@
     font-weight: 500;
     line-height: 114%;
     color: $color-default-white;
+
+    @include vp-1023 {
+      font-size: 16px;
+    }
+
+    @include vp-767 {
+      //font-size: 14px;
+      font-size: size(60px);
+    }
   }
 }

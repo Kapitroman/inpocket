@@ -5,6 +5,10 @@
     margin-bottom: 120px;
   }
 
+  @include vp-479 {
+    margin-bottom: 80px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 47px;

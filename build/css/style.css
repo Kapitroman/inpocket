@@ -2645,24 +2645,24 @@ a.logo.focus-visible:focus {
 }
 
 .intro {
-  /*
-  @function size-desktop($size-in-px) {
-    @return calc($size-in-px / $vp-1440 * 100vw);
-  }
-
-  font-size: $fz-default;
-
-  @include vp-1439 {
-    font-size: size-desktop($fz-default);
-  }
-  */
   margin-top: 152px;
   margin-bottom: 258px;
 }
+@media (max-width: 1279px) {
+  .intro {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+}
 @media (max-width: 767px) {
   .intro {
-    margin-top: 64px;
-    margin-bottom: 100px;
+    margin-top: 184px;
+  }
+}
+@media (max-width: 479px) {
+  .intro {
+    margin-top: 144px;
+    margin-bottom: 80px;
   }
 }
 .intro__head-container {
@@ -2682,6 +2682,16 @@ a.logo.focus-visible:focus {
   margin-right: auto;
   text-align: center;
 }
+@media (max-width: 1279px) {
+  .intro__head-container {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 479px) {
+  .intro__head-container {
+    margin-bottom: 80px;
+  }
+}
 .intro__title {
   margin: 0;
   margin-bottom: 16px;
@@ -2690,11 +2700,31 @@ a.logo.focus-visible:focus {
   line-height: 122%;
   text-transform: uppercase;
 }
+@media (max-width: 1023px) {
+  .intro__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .intro__title {
+    font-size: 24px;
+  }
+}
 .intro__text {
   margin: 0;
   margin-bottom: 40px;
   font-size: 24px;
   line-height: 114%;
+}
+@media (max-width: 1023px) {
+  .intro__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 479px) {
+  .intro__text {
+    font-size: 18px;
+  }
 }
 .intro__features-container {
   position: relative;
@@ -2727,21 +2757,74 @@ a.logo.focus-visible:focus {
   padding: 75px 60px;
   background-color: #151515;
 }
+@media (max-width: 1279px) {
+  .intro__features-list {
+    width: 280px;
+    padding: 45px 35px;
+  }
+}
+@media (max-width: 1023px) {
+  .intro__features-list {
+    right: 120px;
+    width: 250px;
+    padding: 25px 25px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__features-list {
+    right: 25%;
+    width: 50%;
+    padding: 15px 15px;
+  }
+}
+@media (max-width: 479px) {
+  .intro__features-list {
+    right: 15%;
+    width: 70%;
+    padding: 5px 15px;
+  }
+}
 .intro__features-item + .intro__features-item {
   margin-top: 24px;
+}
+@media (max-width: 1023px) {
+  .intro__features-item + .intro__features-item {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__features-item + .intro__features-item {
+    margin-top: 10px;
+  }
 }
 .intro__features-item-number {
   margin: 0;
   margin-bottom: 16px;
   font-family: "Century Gothic", "Arial", sans-serif;
-  font-size: 3.75rem;
+  font-size: 60px;
   font-weight: 700;
   line-height: 120%;
-  /*
-  @include vp-1439 {
-    font-size: size-desktop(60px);
+}
+@media (max-width: 1279px) {
+  .intro__features-item-number {
+    font-size: 44px;
   }
-  */
+}
+@media (max-width: 1023px) {
+  .intro__features-item-number {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__features-item-number {
+    margin-bottom: 6px;
+    font-size: 6.25rem;
+  }
+}
+@media (max-width: 479px) {
+  .intro__features-item-number {
+    margin-bottom: 3px;
+  }
 }
 .intro__features-item-text {
   margin: 0;
@@ -2749,6 +2832,16 @@ a.logo.focus-visible:focus {
   font-weight: 500;
   line-height: 114%;
   color: #ffffff;
+}
+@media (max-width: 1023px) {
+  .intro__features-item-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__features-item-text {
+    font-size: 3.75rem;
+  }
 }
 
 .resources {
@@ -2779,7 +2872,7 @@ a.logo.focus-visible:focus {
 }
 @media (max-width: 479px) {
   .form {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 }
 .form__container {
@@ -2879,7 +2972,7 @@ a.logo.focus-visible:focus {
 }
 @media (max-width: 479px) {
   .marquee-section {
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 }
 .marquee-section .marquee + .marquee {
@@ -2969,6 +3062,11 @@ a.logo.focus-visible:focus {
 @media (max-width: 1279px) {
   .faq {
     margin-bottom: 120px;
+  }
+}
+@media (max-width: 479px) {
+  .faq {
+    margin-bottom: 80px;
   }
 }
 .faq__title {
@@ -3077,6 +3175,11 @@ a.logo.focus-visible:focus {
 @media (max-width: 1279px) {
   .how-do-work-it {
     margin-bottom: 120px;
+  }
+}
+@media (max-width: 479px) {
+  .how-do-work-it {
+    margin-bottom: 80px;
   }
 }
 .how-do-work-it__title {

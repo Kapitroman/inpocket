@@ -25,15 +25,12 @@
     input,
     textarea {
       flex-grow: 1;
-      //max-width: 300px;
+
       min-height: 62px;
-      //margin-left: auto;
-      //padding: 10px;
       padding: 18px;
       border-radius: 16px;
 
       border: 2px solid #151515;
-      border-radius: 5px;
       outline: none;
 
       transition: border 0.3s ease;
@@ -46,12 +43,20 @@
 
       &::placeholder {
         color: #ACACAC;
-
       }
 
       @media screen and (max-width: 767px) {
-        //max-width: unset;
-        //width: 100%;
+        max-width: unset;
+        width: 100%;
+
+        min-height: 42px;
+        padding: 10px;
+        border-radius: 8px;
+
+        transition: border 0.3s ease;
+        background-color: #151515;
+
+        font-size: 16px;
       }
 
       &:hover {

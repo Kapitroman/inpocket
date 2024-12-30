@@ -1,4 +1,14 @@
 .resources {
+  --translate-number: -276px;
+
+  @include vp-767 {
+    --translate-number: -175px;
+  }
+
+  @include vp-479 {
+    --translate-number: -120px;
+  }
+
   margin-bottom: 178px;
 
   @include vp-1279 {
@@ -26,12 +36,76 @@
 
   &__cards {
     width: 720px;
-    //aspect-ratio: 720 / 820;
-
-    //overflow: hidden;
+    border-radius: 20px;
+    height: 824px;
+    overflow: hidden;
 
     @include vp-767 {
-      width: 100%;
+      width: 448px;
+      height: 503px;
+
     }
+
+    @include vp-479 {
+      width: 288px;
+      height: 428px;
+    }
+  }
+}
+
+
+[data-active="3"] {
+  [data-number="1"] {
+    transform: translateY(var(--translate-number));
+  }
+
+  [data-number="2"] {
+    transform: translateY(calc(2 * var(--translate-number)));
+  }
+
+  [data-number="3"] {
+    transform: translateY(calc(3 * var(--translate-number)));
+  }
+}
+
+[data-active="0"] {
+  [data-number="1"] {
+    transform: translateY(0);
+  }
+
+  [data-number="2"] {
+    transform: translateY(var(--translate-number));
+  }
+
+  [data-number="3"] {
+    transform: translateY(calc(2 * var(--translate-number)));
+  }
+}
+
+[data-active="1"] {
+  [data-number="1"] {
+    transform: translateY(var(--translate-number));
+  }
+
+  [data-number="2"] {
+    transform: translateY(var(--translate-number));
+  }
+
+  [data-number="3"] {
+    transform: translateY(calc(2 * var(--translate-number)));
+  }
+}
+
+[data-active="2"] {
+  [data-number="1"] {
+    transform: translateY(var(--translate-number));
+  }
+
+  [data-number="2"] {
+    transform: translateY(calc(2 * var(--translate-number)));
+  }
+
+  [data-number="3"] {
+    transform: translateY(calc(2 * var(--translate-number)));
   }
 }

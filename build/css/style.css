@@ -419,9 +419,9 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
-          box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-box-shadow: inset 0 0 0 1000px #151515;
+          box-shadow: inset 0 0 0 1000px #151515;
+  -webkit-text-fill-color: #ffffff;
 }
 
 input,
@@ -2486,12 +2486,17 @@ a.logo.focus-visible:focus {
   border-radius: 20px;
   color: #151515;
   background-image: linear-gradient(108.54deg, #D0D0D0 -0.99%, #838383 187.83%);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 @media (max-width: 767px) {
   .card {
     padding: 20px;
     padding-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
   }
 }
 @media (max-width: 479px) {
@@ -2499,7 +2504,6 @@ a.logo.focus-visible:focus {
     aspect-ratio: 288/197;
     padding: 10px;
     padding-bottom: 10px;
-    border-radius: 6px;
   }
 }
 .card__info {
@@ -2987,7 +2991,18 @@ a.logo.focus-visible:focus {
 }
 
 .resources {
+  --translate-number: -276px;
   margin-bottom: 178px;
+}
+@media (max-width: 767px) {
+  .resources {
+    --translate-number: -175px;
+  }
+}
+@media (max-width: 479px) {
+  .resources {
+    --translate-number: -120px;
+  }
 }
 @media (max-width: 1279px) {
   .resources {
@@ -3022,11 +3037,73 @@ a.logo.focus-visible:focus {
 }
 .resources__cards {
   width: 720px;
+  border-radius: 20px;
+  height: 824px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .resources__cards {
-    width: 100%;
+    width: 448px;
+    height: 503px;
   }
+}
+@media (max-width: 479px) {
+  .resources__cards {
+    width: 288px;
+    height: 428px;
+  }
+}
+
+[data-active="3"] [data-number="1"] {
+  -webkit-transform: translateY(var(--translate-number));
+          transform: translateY(var(--translate-number));
+}
+[data-active="3"] [data-number="2"] {
+  -webkit-transform: translateY(calc(2 * var(--translate-number)));
+          transform: translateY(calc(2 * var(--translate-number)));
+}
+[data-active="3"] [data-number="3"] {
+  -webkit-transform: translateY(calc(3 * var(--translate-number)));
+          transform: translateY(calc(3 * var(--translate-number)));
+}
+
+[data-active="0"] [data-number="1"] {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+[data-active="0"] [data-number="2"] {
+  -webkit-transform: translateY(var(--translate-number));
+          transform: translateY(var(--translate-number));
+}
+[data-active="0"] [data-number="3"] {
+  -webkit-transform: translateY(calc(2 * var(--translate-number)));
+          transform: translateY(calc(2 * var(--translate-number)));
+}
+
+[data-active="1"] [data-number="1"] {
+  -webkit-transform: translateY(var(--translate-number));
+          transform: translateY(var(--translate-number));
+}
+[data-active="1"] [data-number="2"] {
+  -webkit-transform: translateY(var(--translate-number));
+          transform: translateY(var(--translate-number));
+}
+[data-active="1"] [data-number="3"] {
+  -webkit-transform: translateY(calc(2 * var(--translate-number)));
+          transform: translateY(calc(2 * var(--translate-number)));
+}
+
+[data-active="2"] [data-number="1"] {
+  -webkit-transform: translateY(var(--translate-number));
+          transform: translateY(var(--translate-number));
+}
+[data-active="2"] [data-number="2"] {
+  -webkit-transform: translateY(calc(2 * var(--translate-number)));
+          transform: translateY(calc(2 * var(--translate-number)));
+}
+[data-active="2"] [data-number="3"] {
+  -webkit-transform: translateY(calc(2 * var(--translate-number)));
+          transform: translateY(calc(2 * var(--translate-number)));
 }
 
 .form {

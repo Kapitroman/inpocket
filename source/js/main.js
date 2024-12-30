@@ -6,6 +6,7 @@ import { uploadFile, uploadImageDrop } from './modules/input-file/init-upload';
 
 import { Burger } from './modules/burger';
 import { initAccordions } from './modules/init-accordion.js';
+import { animationCards } from './modules/animation-cards.js';
 
 // ---------------------------------
 
@@ -34,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const burger = new Burger();
     burger.init();
     initAccordions();
+    animationCards();
   });
 });
 

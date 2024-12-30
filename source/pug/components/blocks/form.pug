@@ -10,15 +10,18 @@ mixin form()
             +custom-input({
               inputPlaceholder: "Имя",
               inputName: "name",
+              inputRequired: true
             })
             +custom-input({
               inputPlaceholder: "E-mail или телефон",
               inputName: "telOrMail",
+              inputRequired: true
             })
           .form__fields-agreement
             +custom-toggle({
               inputLabel: "Соглашаюсь с условиями.",
               inputName: "agreement",
+              inputRequired: true
             }).custom-toggle--checkbox
             a(href="#").form__more-details Подробнее
           +btn({

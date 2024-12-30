@@ -11,18 +11,20 @@
   color: #151515;
 
   background-image: linear-gradient(108.54deg, #D0D0D0 -0.99%, #838383 187.83%);
+  cursor: pointer;
+
+  transition: transform $trans-600;
 
   @include vp-767 {
     padding: 20px;
     padding-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
   }
 
   @include vp-479 {
     aspect-ratio: 288 / 197;
     padding: 10px;
     padding-bottom: 10px;
-    border-radius: 6px;
   }
 
   &__info {

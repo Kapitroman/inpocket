@@ -5,10 +5,11 @@ mixin custom-toggle(options = {})
   - const inputChecked = options.inputChecked || false
   - const inputName = options.inputName ? options.inputName : false
   - const inputValue = options.inputValue ? options.inputValue : false
+  - const inputRequired = options.inputRequired ? options.inputRequired : false
 
   .custom-toggle&attributes(attributes)
     label
-      input(type=inputType, value=inputValue, id=inputId, name=inputName, checked=inputChecked)
+      input(type=inputType, value=inputValue, id=inputId, name=inputName, checked=inputChecked, required=inputRequired)
       span.custom-toggle__icon
       if inputLabel
         span.custom-toggle__label!= inputLabel

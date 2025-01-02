@@ -8,6 +8,7 @@ import { Burger } from './modules/burger';
 import { initAccordions } from './modules/init-accordion.js';
 import { animationCards } from './modules/animation-cards.js';
 import { logoAnimation } from './modules/logo-animation.js';
+import { initScrollSeparator } from './modules/init-scroll-separator.js';
 
 // ---------------------------------
 
@@ -38,6 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initAccordions();
     animationCards();
     logoAnimation();
+    initScrollSeparator();
   });
 });
 

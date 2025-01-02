@@ -21,7 +21,6 @@
     display: contents;
 
     @include vp-767 {
-      //display: block;
       display: flex;
       flex-direction: column;
 
@@ -36,8 +35,6 @@
       padding-bottom: 60px;
 
       background-color: #151515;
-
-      //backdrop-filter: blur(size(3px));
 
       visibility: hidden;
       opacity: 0;

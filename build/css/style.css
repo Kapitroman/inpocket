@@ -365,6 +365,13 @@ template {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Albert Sans";
+  src: url("../fonts/AlbertSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 *,
 *::before,
 *::after {
@@ -2451,7 +2458,7 @@ a.logo.focus-visible:focus {
 .intro__features-item-number {
   margin: 0;
   margin-bottom: 16px;
-  font-family: "Century Gothic", "Arial", sans-serif;
+  font-family: "Albert Sans", "Arial", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 120%;

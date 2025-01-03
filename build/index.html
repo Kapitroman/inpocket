@@ -59,7 +59,9 @@
             </div>
             <div class="intro__features-container">
               <picture>
-                <source type="image/webp" srcset="img/content/card.webp, img/content/card@2x.webp 2x"><img src="img/content/card.png" srcset="img/content/card@2x.png 2x" width="1311" height="776" alt="фоновое изображение карты">
+                <source media="(max-width: 479px)" type="image/webp" srcset="img/content/card-small-mobile.webp, img/content/card-small-mobile@2x.webp 2x">
+                <source media="(max-width: 767px)" type="image/webp" srcset="img/content/card-mobile.webp, img/content/card-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/content/card.webp, img/content/card@2x.webp 2x"><img src="img/content/card.png" srcset="img/content/card@2x.png 2x" width="1311" height="776" alt="фоновое изображение карты">
               </picture>
               <div class="intro__features-list">
                 <div class="intro__features-item">

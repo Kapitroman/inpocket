@@ -4,8 +4,6 @@
   display: flex;
 
   width: 245px;
-  //padding: 14px 0 10px 36px;
-  //padding-right: 20px;
 
   font-size: 16px;
   font-weight: 500;
@@ -13,17 +11,8 @@
   color: #ACACAC;
 
   @media screen and (max-width: 767px) {
-    //padding: 14px 0 10px 0;
     width: auto;
     font-size: 14px;
-  }
-
-  &:last-of-type {
-    //padding: 14px 0 58px 36px;
-
-    @media screen and (max-width: 767px) {
-      //padding: 14px 0 58px 0;
-    }
   }
 
   input {
@@ -40,8 +29,6 @@
     position: relative;
 
     padding-left: 29px;
-
-    //padding: 11px 0 11px 40px;
 
     cursor: pointer;
 
@@ -122,10 +109,7 @@
   }
 
   input:checked+.custom-toggle__icon {
-    //border: 1.5px solid #2c39f2;
-
     &::before {
-      //background-color: #2c39f2;
       opacity: 1;
     }
   }

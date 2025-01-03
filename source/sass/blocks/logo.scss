@@ -21,12 +21,10 @@ a.logo {
 .header .logo {
   width: 88px;
   aspect-ratio: 168 / 44;
-  //height: 24px;
 }
 
 .footer .logo {
   width: 168px;
-  //height: 44px;
   aspect-ratio: 168 / 44;
 
   @include vp-767 {

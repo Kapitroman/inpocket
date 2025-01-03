@@ -93,9 +93,13 @@
 
 .pocket {
   opacity: 0;
-  transform: perspective(180px) rotateY(-90deg);
-  transition: transform 0.45s ease-in 0.9s;
+  transform: rotateY(-90deg);
+  transition: transform 0.45s ease-in 0.9s, opacity 0.45s ease-in 0.9s;
   transform-origin: center;
+}
+
+.logotype {
+  perspective: (150px);
 }
 
 .play {

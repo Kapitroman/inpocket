@@ -16,15 +16,23 @@
   transition: transform $trans-600;
 
   @include vp-767 {
+    //padding: 20px;
+    //padding-bottom: 25px;
+    //border-radius: 20px;
     padding: 20px;
     padding-bottom: 20px;
-    border-radius: 12px;
+    border-radius: 20px;
   }
 
   @include vp-479 {
-    aspect-ratio: 288 / 197;
-    padding: 10px;
-    padding-bottom: 10px;
+    //aspect-ratio: 288 / 197;
+    //padding: 10px;
+    //padding-bottom: 10px;
+    aspect-ratio: 296 / 303;
+    padding: 20px;
+    padding-bottom: 25px;
+    border-radius: 20px;
+
   }
 
   &__info {
@@ -47,7 +55,9 @@
     }
 
     @include vp-479 {
-      margin-bottom: 8px;
+      //margin-bottom: 8px;
+      margin-bottom: 16px;
+      min-height: 73px;
     }
   }
 
@@ -60,15 +70,17 @@
 
     @include vp-767 {
       margin-bottom: 5px;
+      //margin-bottom: 8px;
     }
 
     @include vp-479 {
-      margin-bottom: 3px;
+      //margin-bottom: 3px;
+      margin-bottom: 8px;
     }
   }
 
   &__info-title {
-    margin: 0;
+    margin: 6px 0;
 
     font-family: $ff-century;
     font-size: 24px;
@@ -80,7 +92,9 @@
     }
 
     @include vp-479 {
-      font-size: 16px;
+      //font-size: 16px;
+      font-size: 20px;
+      margin: 0;
     }
 
   }
@@ -97,7 +111,8 @@
     }
 
     @include vp-479 {
-      font-size: 12px;
+      //font-size: 12px;
+      font-size: 13px;
     }
   }
 
@@ -118,7 +133,8 @@
     }
 
     @include vp-479 {
-      font-size: 12px;
+      //font-size: 12px;
+      font-size: 13px;
     }
   }
 
@@ -130,7 +146,8 @@
     }
 
     @include vp-479 {
-      margin-top: 5px;
+      //margin-top: 5px;
+      margin-top: 12px;
     }
   }
 
@@ -159,7 +176,8 @@
     }
 
     @include vp-479 {
-      margin-top: 5px;
+      //margin-top: 5px;
+      margin-top: 12px;
     }
   }
 
@@ -194,8 +212,10 @@
     }
 
     @include vp-479 {
-      width: 30px;
-      height: 30px;
+      //width: 30px;
+      //height: 30px;
+      width: 40px;
+      height: 40px;
     }
   }
 }

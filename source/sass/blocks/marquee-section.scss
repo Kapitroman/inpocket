@@ -1,7 +1,8 @@
 .marquee-section {
   margin-bottom: 117px;
 
-  @include vp-479 {
+  @include vp-767 {
+    display: none;
     margin-bottom: 80px;
   }
 

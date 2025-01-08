@@ -15,15 +15,12 @@
   cursor: pointer;
   transition: opacity $trans-default;
 
-  @include vp-767 {
-    padding: 10px 16px;
-    border: none;
-    border-radius: 8px;
 
-    font-size: 16px;
-    line-height: 114%;
+  @include vp-767 {
+    font-size: 14px;
   }
 
+  /*
   &--form {
     padding: 20px 40px;
 
@@ -40,7 +37,7 @@
       text-transform: uppercase;
     }
   }
-
+  */
   &:disabled {
     opacity: 0.5;
 

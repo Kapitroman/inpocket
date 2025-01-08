@@ -2,11 +2,11 @@
   --translate-number: -276px;
 
   @include vp-767 {
-    --translate-number: -175px;
+    --translate-number: -165px;
   }
 
   @include vp-479 {
-    --translate-number: -120px;
+    --translate-number: -195px;
   }
 
   margin-bottom: 178px;
@@ -16,7 +16,7 @@
   }
 
   @include vp-479 {
-    margin-bottom: 80px;
+    //margin-bottom: 80px;
   }
 
   .container {
@@ -32,6 +32,10 @@
     @include vp-1279 {
       margin-bottom: 35px;
     }
+
+    @include vp-767 {
+      margin-bottom: 20px;
+    }
   }
 
   &__cards {
@@ -42,13 +46,14 @@
 
     @include vp-767 {
       width: 448px;
-      height: 503px;
+      height: 533px;
 
     }
 
     @include vp-479 {
-      width: 288px;
-      height: 428px;
+      width: 296px;
+      height: 627px;
+      //height: 428px;
     }
   }
 }

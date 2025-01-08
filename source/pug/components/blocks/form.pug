@@ -19,12 +19,13 @@ mixin form()
             })
           .form__fields-agreement
             +custom-toggle({
-              inputLabel: "Соглашаюсь с условиями.",
+              inputLabel: "Соглашаюсь с условиями",
               inputName: "agreement",
-              inputRequired: true
+              inputRequired: true,
+              inputChecked: true,
             }).custom-toggle--checkbox
             a(href="#").form__more-details Подробнее
           +btn({
             type: "submit",
             text: "Отправить"
-          }).btn--form
+          })

@@ -20,10 +20,10 @@
       flex-grow: 1;
 
       min-height: 62px;
-      padding: 18px;
+      padding: 19px;
       border-radius: 16px;
 
-      border: 2px solid #151515;
+      border: 1px solid #151515;
       outline: none;
 
       transition: border 0.3s ease;
@@ -43,21 +43,23 @@
         width: 100%;
 
         min-height: 42px;
-        padding: 10px;
+        padding: 11px 7px;
         border-radius: 8px;
 
         transition: border 0.3s ease;
         background-color: #151515;
 
-        font-size: 16px;
+        font-size: 14px;
       }
 
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        border: 1px solid rgba(#000000, 0.5);
+        //border: 1px solid #808080;
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        border: 1px solid rgba(#000000, 0.8);
+        //border: 1px solid #333333;
       }
     }
   }
@@ -82,22 +84,22 @@
 
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border: 1px solid #ff1553;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        border: 1px solid rgba(#ff1553, 0.5);
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid #22b259;
+      border: 1px solid #22b259;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        border: 1px solid rgba(#22b259, 0.5);
       }
     }
   }

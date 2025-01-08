@@ -15,6 +15,13 @@
     font-size: 14px;
   }
 
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
+    line-height: 13.75px;
+
+    margin-bottom: 4px;
+  }
+
   input {
     position: absolute;
 
@@ -48,10 +55,14 @@
       height: 18px;
       border-radius: 2px;
 
-      background-color: $color-default-white;
+      background-color: #E2FF32;
 
       @include vp-767 {
-        top: 2px;
+        top: 1px;
+      }
+
+      @include vp-479 {
+        top: 7px;
       }
 
 

@@ -1,7 +1,8 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
-      +logo()
-      .footer__info
-        a(href="tel:+73472372385") +7 347 237 23 85
-        a(href="mailto:info@inpocket.ru") info@inpocket.ru
+      .footer__wrapper
+        +logo()
+        .footer__info
+          a(href="tel:+73472372385") +7 347 237 23 85
+          a(href="mailto:info@inpocket.ru") info@inpocket.ru

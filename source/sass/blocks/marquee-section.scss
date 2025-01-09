@@ -79,3 +79,25 @@
     }
   }
 }
+
+.marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  &__text {
+    display: flex;
+  }
+}
+
+.marquee__text-wrapper {
+  transform: translateX(-100px);
+}
+
+.marquee__text--reverse {
+  transform: translateX(-150px);
+}
+
+.marquee:last-child .marquee__text-wrapper {
+  transform: translateX(-20px);
+}

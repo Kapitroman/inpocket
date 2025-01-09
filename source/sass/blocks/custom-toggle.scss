@@ -54,8 +54,11 @@
       width: 18px;
       height: 18px;
       border-radius: 2px;
+      border: 2px solid #E2FF32;
 
-      background-color: #E2FF32;
+      transition: background-color 0.3s ease;
+
+      //background-color: #E2FF32;
 
       @include vp-767 {
         top: 1px;
@@ -120,6 +123,8 @@
   }
 
   input:checked+.custom-toggle__icon {
+    background-color: #E2FF32;
+
     &::before {
       opacity: 1;
     }

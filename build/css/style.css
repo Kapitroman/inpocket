@@ -1288,11 +1288,11 @@ a.logo.focus-visible:focus {
 .header .logo {
   width: 88px;
   aspect-ratio: 168/44;
-}
-@media (max-width: 479px) {
-  .header .logo {
+  /*
+  @include vp-479 {
     width: 68px;
   }
+  */
 }
 
 .footer .logo {
@@ -1330,7 +1330,7 @@ a.logo.focus-visible:focus {
     font-size: 28px;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .text-title {
     font-size: 20px;
   }
@@ -1359,6 +1359,8 @@ a.logo.focus-visible:focus {
 }
 @media (max-width: 767px) {
   .card {
+    aspect-ratio: initial;
+    height: 257px;
     padding: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
@@ -1366,7 +1368,8 @@ a.logo.focus-visible:focus {
 }
 @media (max-width: 479px) {
   .card {
-    aspect-ratio: 296/303;
+    aspect-ratio: initial;
+    height: 303px;
     padding: 20px;
     padding-bottom: 25px;
     border-radius: 20px;
@@ -1877,13 +1880,13 @@ a.logo.focus-visible:focus {
 }
 @media (max-width: 767px) {
   .resources__cards {
-    width: 448px;
+    width: 100%;
     height: 533px;
   }
 }
 @media (max-width: 479px) {
   .resources__cards {
-    width: 296px;
+    width: 100%;
     height: 627px;
   }
 }
@@ -2243,7 +2246,7 @@ a.logo.focus-visible:focus {
 }
 @media (max-width: 479px) {
   .faq__container {
-    padding: 5px 0;
+    padding: 10px;
   }
 }
 .faq__element:last-child {
@@ -2299,7 +2302,7 @@ a.logo.focus-visible:focus {
 .faq__element.is-active > .faq__content {
   margin-top: 8px;
 }
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .faq__element.is-active > .faq__content {
     margin-top: 20px;
   }

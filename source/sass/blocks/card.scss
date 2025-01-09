@@ -19,6 +19,8 @@
     //padding: 20px;
     //padding-bottom: 25px;
     //border-radius: 20px;
+    aspect-ratio: initial; ///
+    height: 257px;
     padding: 20px;
     padding-bottom: 20px;
     border-radius: 20px;
@@ -28,7 +30,11 @@
     //aspect-ratio: 288 / 197;
     //padding: 10px;
     //padding-bottom: 10px;
-    aspect-ratio: 296 / 303;
+
+    //aspect-ratio: 296 / 303;
+    aspect-ratio: initial;
+    height: 303px;
+
     padding: 20px;
     padding-bottom: 25px;
     border-radius: 20px;

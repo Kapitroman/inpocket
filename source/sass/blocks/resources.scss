@@ -45,15 +45,18 @@
     overflow: hidden;
 
     @include vp-767 {
-      width: 448px;
+      width: 100%;
+      //width: 448px;
       height: 533px;
 
     }
 
     @include vp-479 {
-      width: 296px;
+      width: 100%;
+      //width: 296px;
       height: 627px;
       //height: 428px;
+
     }
   }
 }

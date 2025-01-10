@@ -5,10 +5,6 @@
     margin-bottom: 120px;
   }
 
-  @include vp-479 {
-    //margin-bottom: 80px;
-  }
-
   &__title {
     margin: 0;
     margin-bottom: 47px;
@@ -24,9 +20,7 @@
 
   &__container {
     padding: 40px 300px 63px 104px;
-    //aspect-ratio: 1180 / 414;
     background-image: url("../img/svg/background-faq.svg");
-    //background-repeat: no-repeat;
     background-repeat: repeat-y;
     background-size: 100%;
 
@@ -44,7 +38,6 @@
     }
 
     @include vp-479 {
-      //padding: 5px 0;
       padding: 10px;
     }
   }
@@ -65,7 +58,6 @@
   }
 
   &__element.is-active>&__button {
-    //background-image: linear-gradient(90deg, #E3E1E1 0%, #E2FF32 100%);
     color: #151515;
     border-color: $color-transparent;
     background-color: #F5F5F5;
@@ -87,11 +79,9 @@
 
     @include vp-479 {
       padding: 7px 11px;
-      //border-radius: 8px;
-
-      //font-size: 14px;
-      font-size: 13px;
       max-width: 271px;
+
+      font-size: 13px;
     }
   }
 
@@ -127,7 +117,6 @@
 
     @include vp-479 {
       padding: 8px 12px;
-      //border-radius: 8px;
     }
 
     p {

@@ -74,7 +74,6 @@
     aspect-ratio: 1311 / 776;
 
     @include vp-767 {
-      //width: 835px;
       aspect-ratio: initial;
       overflow-x: hidden;
     }
@@ -88,13 +87,9 @@
       opacity: 0.8;
 
       @include vp-767 {
-        //height: auto;
         aspect-ratio: 1311 / 776;
-        //width: 835px;
         height: 494px;
-        //width: auto;
         object-position: 0;
-        //border-radius: 20px;
       }
     }
   }
@@ -129,21 +124,17 @@
     @include vp-767 {
       right: 0;
 
+      width: calc(272px + 20px);
+      padding: 28px;
+      padding-left: calc(40px + 20px);
+    }
+
+    @include vp-374 {
+      right: 0;
+
       width: 272px;
       padding: 28px;
       padding-left: 40px;
-      //right: 25%;
-
-      //width: 50%;
-      //padding: 15px 15px;
-
-    }
-
-    @include vp-479 {
-      //right: 15%;
-
-      //width: 70%;
-      //padding: 5px 15px;
     }
   }
 
@@ -155,7 +146,6 @@
     }
 
     @include vp-767 {
-      //margin-top: 10px;
       margin-top: 60px;
     }
   }
@@ -179,18 +169,10 @@
     }
 
     @include vp-767 {
-      //margin-bottom: 6px;
-
-      //font-size: size(100px);
       margin-bottom: 12px;
 
       font-size: 48px;
     }
-
-    @include vp-479 {
-      //margin-bottom: 3px;
-    }
-
   }
 
   &__features-item-text {
@@ -206,7 +188,6 @@
     }
 
     @include vp-767 {
-      //font-size: size(60px);
       font-size: 16px;
     }
   }

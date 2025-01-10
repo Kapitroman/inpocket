@@ -15,10 +15,6 @@
     margin-bottom: 120px;
   }
 
-  @include vp-479 {
-    //margin-bottom: 80px;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
@@ -46,17 +42,13 @@
 
     @include vp-767 {
       width: 100%;
-      //width: 448px;
       height: 533px;
 
     }
 
     @include vp-479 {
       width: 100%;
-      //width: 296px;
       height: 627px;
-      //height: 428px;
-
     }
   }
 }

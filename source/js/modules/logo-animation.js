@@ -16,7 +16,7 @@ const logoAnimation = () => {
   scrollLock.disablePageScroll();
   pageLogo.classList.add('play');
 
-  setTimeout(() => endAnimation(), 1700);//1600
+  setTimeout(() => endAnimation(), 2000);
 };
 
 export { logoAnimation };

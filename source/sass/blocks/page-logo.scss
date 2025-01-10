@@ -1,17 +1,6 @@
 .page-logo {
   --delay: 0.125s;
-  /*
-  --out-x: -650px;
-  --out-y: -400px;
 
-  @include vp-1279 {}
-
-  @include vp-1023 {}
-
-  @include vp-767 {}
-
-  @include vp-479 {}
-  */
   position: fixed;
   top: 0;
   left: 0;
@@ -19,29 +8,17 @@
   bottom: 0;
   z-index: 9999;
 
-  /*
   display: flex;
   align-items: center;
   justify-content: center;
-  */
 
   background-color: #151515;
-  transition: opacity 0.5s ease-in 0.35s;
+  transition: opacity 0.5s ease-in;
 }
 
 .page-logo.is-hidden {
   opacity: 0;
   pointer-events: none;
-
-  .logotype {
-    //transform: scale(0.4) translate(-650px, -400px);
-    transform: scale(0.4) translate(-50%, -50%);
-    //transform: translate(-50%, -50%) scale(0.4);
-    //top: 3%;
-    //left: 3%;
-    top: 3%;
-    left: 1%;
-  }
 }
 
 .circle1,
@@ -123,16 +100,12 @@
 
 .logotype {
   perspective: (150px);
-  //position: relative; ////
+
   position: absolute;
   width: 240px;
   height: 66px;
-  //transition: transform 13s ease-in;
-  transition: top 0.7s ease-in, left 0.7s ease-in, transform 0.7s ease-in;
-  transform-origin: center;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
+
+  transition: opacity 0.45s ease-in 1.5s
 }
 
 .dots,
@@ -165,5 +138,9 @@
   .in {
     opacity: 1;
     transform: rotateY(0);
+  }
+
+  .logotype {
+    opacity: 0;
   }
 }

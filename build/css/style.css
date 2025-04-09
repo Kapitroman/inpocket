@@ -1256,8 +1256,13 @@ a.logo.focus-visible:focus {
 }
 
 .header .logo {
-  width: 88px;
+  width: 168px;
   aspect-ratio: 168/44;
+}
+@media (max-width: 767px) {
+  .header .logo {
+    width: 88px;
+  }
 }
 
 .footer .logo {
@@ -1267,11 +1272,6 @@ a.logo.focus-visible:focus {
 @media (max-width: 767px) {
   .footer .logo {
     width: 88px;
-  }
-}
-@media (max-width: 479px) {
-  .footer .logo {
-    width: 68px;
   }
 }
 

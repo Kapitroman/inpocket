@@ -19,8 +19,12 @@ a.logo {
 }
 
 .header .logo {
-  width: 88px;
+  width: 168px;
   aspect-ratio: 168 / 44;
+
+  @include vp-767 {
+    width: 88px;
+  }
 }
 
 .footer .logo {
@@ -29,9 +33,5 @@ a.logo {
 
   @include vp-767 {
     width: 88px;
-  }
-
-  @include vp-479 {
-    width: 68px;
   }
 }
